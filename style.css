@@ -1,0 +1,319 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #002950, #044c80);
+  margin: 0;
+  padding: 0;
+
+
+      color: rgb(255, 255, 255);
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 40px;
+      gap: 50px;
+    }
+
+    .hero img {
+      max-width: 500px;
+      width: 100%;
+      height: auto;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+
+    .hero-text .data {
+      color: #000000;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+
+    .hero-text p {
+      margin-top: 10px;
+      font-size: 1.2rem;
+    }
+    h3{
+      color: #ffffff;
+    }
+    p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 85%;
+    }
+    h4{
+      color: #fafcff;
+    }
+   
+ html {
+    scroll-behavior: smooth;
+}
+
+.palestrantes-container {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 20px; /* espaço entre os itens */
+  max-width: 2000px; /* largura máxima do container */
+  margin: 0 auto; /* centraliza na página */
+}
+
+#PARTICIPANTES h4 {
+  font-family: 'Courier New', Courier, monospace; /* fonte mais técnica */
+  font-size: 2.5rem; /* tamanho maior */
+  font-weight: bold;
+  color: #ffffff; /* nome dos participantes em branco */
+}
+
+
+.palestrante {
+  flex: 1 1 30%; /* ocupa até 30% da largura, quebra linha se necessário */
+  box-sizing: border-box;
+  text-align: center;
+  color: #ffffff; /* cor do texto, ajuste se quiser */
+}
+
+.palestrante img {
+  width: 100%; /* imagem ocupa toda largura do container do palestrante */
+  max-width: 180px; /* limita o tamanho máximo */
+  border-radius: 20%; /* cantos arredondados, opcional */
+  margin-bottom: 10px;
+}
+
+
+.btn-verde {
+  display: inline-block;
+  background-color: #eefff5;
+  color: #0b0c2a;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-verde:hover {
+  background-color: #dbebe2;
+  transform: scale(1.05);
+}
+
+.footer {
+  background-color: #787ab3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 4px solid #fcfffd;
+  font-family: Arial, sans-serif;
+}
+
+
+.barra-luz {
+  height: 5px;
+  background: linear-gradient(to right, #edfcf3, #0044ff, #00ff66);
+  animation: mover 3s infinite linear;
+}
+
+@keyframes mover {
+  0% { background-position: 0 0; }
+  100% { background-position: 200% 0; }
+}
+
+.rodape {
+  background: linear-gradient(to right, #34365f, #0050fd);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid #00ff66;
+}
+
+.faq {
+  background-color: #eff0ff;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+.faq h3 {
+  color: #edfff3;
+}
+
+
+.frase {
+  font-style: italic;
+  color: #f7fffa;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2em;
+}
+
+.linha-brilhante {
+  width: 300px;
+  height: 4px;
+  margin:12px auto 10;
+  background: linear-gradient(90deg, #00ffcc, #00ff66, #00ccff);
+  box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ff66, 0 0 30px #00ccff;
+  border-radius: 2px;
+  animation: brilho 2s infinite alternate;
+}
+
+@keyframes brilho {
+  from {
+    box-shadow: 0 0 10px #00ffcc;
+  }
+  to {
+    box-shadow: 0 0 20px #00ff66, 0 0 30px #00ccff;
+  }
+}
+
+.btn-inscricao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: linear-gradient(90deg, #00ffcc, #00ccff);
+  color: #000;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 10px #00ccff, 0 0 20px #00ffcc;
+  transition: 0.3s;
+}
+.btn-inscricao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00ffcc, 0 0 30px #00ccff;
+}
+
+.menu-fixo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85); /* preto com transparência */
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  background:#1b8f49 ;
+  
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 90px;
+}
+
+.nav-container a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s ease;
+  padding: 4px 10px;
+  display: block;
+}
+
+.nav-container a:hover {
+  color: #ffffff;
+  font-size: 20px;
+  display: block;
+}
+
+
+fieldset {
+  border: 1px solid #00ff66; /* Cor verde + linha fina */
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px; /* Borda mais suave (opcional) */
+}
+
+
+.caixa-kahoot {
+  border: 2px solid #00ff66;
+  border-radius: 12px;
+  padding: 20px 40px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background-color: transparent;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.titulo-kahoot {
+  color: white;
+  margin: 0;
+  font-size: 24px;
+}
+
+.seta {
+  font-size: 36px;
+  color: white;
+  margin: 0;
+}
+
+.btn-kahoot {
+  color: white;
+  background-color: #007bff; /* azul */
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #007bff;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-kahoot:hover {
+  background-color: white;
+  color: #007bff;
+}
+
+#solucoes{
+  image-rendering: auto;
+  width: 600px;
+  height: 500px;
+}
+
+.linhas{
+  display: block;
+  width: 60%;
+  padding: auto;
+  margin: auto;
+  box-shadow: 0 0 5px #00ffcc, 0 0 10px #00ff66, 0 0 20px #00ccff;
+  transition: 0.2s;
+  border-radius: 30px;
+
+}
+
+.qrcode{
+  image-rendering: auto;
+  width: 600px;
+  height: 600px;
+
+}
+#problemas{
+  image-rendering: auto;
+  width: 600px;
+  height: 500px;
+
+}
+
+
